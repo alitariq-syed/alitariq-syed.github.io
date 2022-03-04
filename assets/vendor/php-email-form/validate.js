@@ -59,6 +59,9 @@
       if( response.ok ) {
         return response.text()
       } else {
+        console.log("asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd")
+        console.log(response)
+
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
