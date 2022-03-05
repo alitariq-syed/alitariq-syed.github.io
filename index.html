@@ -635,21 +635,27 @@
                 <p>+92 313 5155 012</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13301.720512551567!2d73.05854428016598!3d33.54219917656424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df92dcfec79c7f%3A0x1581482a96e7cf80!2sAskari%2014%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1646488734986!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
           </div>
 
+          <!-- issue with POST method not allowed on local and github server -->
+          <!-- https://stackoverflow.com/questions/24348223/send-email-from-static-page-hosted-on-github-pages -->
+          
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+            <form action="https://formspree.io/f/xrgjkygv" method="post" class="php-email-form">
+              <!-- <input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
+                <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="_replyto" id="email" required>
                 </div>
               </div>
               <div class="form-group">
@@ -703,7 +709,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

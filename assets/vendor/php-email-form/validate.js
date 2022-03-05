@@ -12,7 +12,19 @@
     e.addEventListener('submit', function(event) {
       event.preventDefault();
 
+      // var data = {
+      //   'name': $('#name').val(),
+      //   'email': $('#email').val(),
+      //   'contact': $('#contactNumber').val(),
+      //   'message' : $('#message').val()
+      // };
+
+      // console.log(data)
+
+
       let thisForm = this;
+      // console.log(this)
+      // console.log(this.message)
 
       let action = thisForm.getAttribute('action');
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
@@ -49,7 +61,38 @@
     });
   });
 
-  function php_email_form_submit(thisForm, action, formData) {
+  // function php_email_form_submit(thisForm, action, formData) {
+  
+  //   $.ajax({ 
+  //     url: 'forms/contactform.php', 
+  //     data: data,
+  //     type: 'POST',
+  //     success: function (data) {
+  //   // For Notification
+  //         document.getElementById("sendMailForm").reset();
+  //         var $alertDiv = $(".mailResponse");
+  //         $alertDiv.show();
+  //         $alertDiv.find('.alert').removeClass('alert-danger alert-success');
+  //         $alertDiv.find('.mailResponseText').text("");
+  //         if(data.error){
+  //             $alertDiv.find('.alert').addClass('alert-danger');
+  //             $alertDiv.find('.mailResponseText').text(data.message);
+  //         }else{
+  //             $alertDiv.find('.alert').addClass('alert-success');
+  //             $alertDiv.find('.mailResponseText').text(data.message);
+  //         }
+  //     }
+  // });
+    //   var data = {
+  //     'name': $('#name').val(),
+  //     'email': $('#email').val(),
+  //     'contact': $('#contactNumber').val(),
+  //     'message' : $('#message').val()
+  // };
+  // console.log(data)
+
+  // }
+ function php_email_form_submit(thisForm, action, formData) {
     fetch(action, {
       method: 'POST',
       body: formData,
@@ -59,8 +102,10 @@
       if( response.ok ) {
         return response.text()
       } else {
-        console.log("asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd")
-        console.log(response)
+        // console.log("asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd")
+        // console.log(response)
+        console.log(action)
+        // console.log(formData)
 
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
@@ -75,6 +120,8 @@
       }
     })
     .catch((error) => {
+      console.log(error)
+
       displayError(thisForm, error);
     });
   }
