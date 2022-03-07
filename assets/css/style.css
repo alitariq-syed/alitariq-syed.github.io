@@ -198,13 +198,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
+  /* auto is good for mobile, but 100vh is for desktop */
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 #hero:before {
   content: "";
   /* background: rgba(5, 13, 24, 0.3); */
-  background: rgba(5, 13, 24, 0.15);
+  background: rgba(5, 13, 24, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -242,6 +243,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;

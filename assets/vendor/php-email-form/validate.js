@@ -99,14 +99,14 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
-      console.log(response)
-      console.log(response.ok)
+      // console.log(response)
+      // console.log(response.ok)
       if( response.ok ) {
         return response.text()
       } else {
         // console.log("asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd")
         // console.log(response)
-        console.log(action)
+        // console.log(action)
         // console.log(formData)
 
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
@@ -127,7 +127,7 @@
       }
     })
     .catch((error) => {
-      console.log(error)
+      // console.log(error)
 
       displayError(thisForm, error);
     });
