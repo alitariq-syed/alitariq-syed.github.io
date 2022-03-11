@@ -23,6 +23,17 @@ a:hover {
   text-decoration: none;
 }
 
+a.download {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a.download:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
@@ -200,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   /* auto is good for mobile, but 100vh is for desktop */
   background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background-size:  cover;
 }
 #hero:before {
   content: "";
