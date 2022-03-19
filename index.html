@@ -63,10 +63,10 @@
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Publications</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav><!-- .nav-menu -->    
     </div>
   </header><!-- End Header -->
 
@@ -347,82 +347,231 @@
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web App</li>
-              <li data-filter=".filter-Detection">Detection</li>
-              <li data-filter=".filter-Classification">Classification</li>
-              <li data-filter=".filter-Segmentation">Segmentation</li>
-            </ul>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <b>Work in-progress</b>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+
+                <!-- <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <img src="assets/img/portfolio/tb detection/det_result.png"  class="card-img-top" style="width:128;height:128" alt="...">
+
+                      <div class="card-body">
+                        <h5 class="card-title">TB detection using vision-transformer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">while employed at MIDL-NCAI</h6>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="portfolio-details-tb-detection.html" class="btn btn-primary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Ph.D. Research</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Explainable AI</h6>
+                        <p class="card-text">Counterfactual and contrastive explanation of DCNN model decisions to develop trust in their use in high-risk environments.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="card-group">
+                  <div class="card">
+                    <img src="assets/img/portfolio/tb detection/det_result.png"  class="card-img-top" height="256px" alt="...">
+
+                      <div class="card-body">
+                        <h5 class="card-title">TB detection using vision-transformer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">while employed at MIDL-NCAI</h6>
+                        <ul>
+                          <li>
+                            Trained state-of-the-art vision-transformer based architectures for TB classification and detection tasks
+                          </li>
+                          <li>
+                            Achieved first position in TBX11K TB detection and classification challenge with 98% classification accuracy and 61% average precision of BBox.
+                          </li>
+                          <li>
+                            <b>Paper writing in progress.</b>
+                          </li>
+                        </ul>
+
+                      </div>
+                      <div class="card-footer">
+                        <a href="portfolio-details-tb-detection.html" class="btn btn-primary">View details</a>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/img/portfolio/Fig3.png"  class="card-img-top"  alt="...">
+
+                    <div class="card-body">
+                      <h5 class="card-title">Ph.D. Research</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Explainable AI</h6>
+                      <ul>
+                        <li>
+                          Extracting knowledge from black-box DCNN models.
+                        </li>
+                        <li>
+                          Providing counterfactual and contrastive reasoning of DCNN model decisions.
+                        </li>
+                        <li>
+                          Improving transparency for high-risk applications.
+                        </li>
+                        <li>
+                          Enabling model debugging and repair.
+                        </li>
+                      </ul>
+                      <!-- <p class="card-text">Extracting knowledge from black-box DCNN models.</p> -->
+                      <!-- <p class="card-text">Providing counterfactual and contrastive reasoning of DCNN model decisions.</p> -->
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary">View details</a>
+                    </div>
+                  </div>
+                  <!-- <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Medical Image to report generation</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Overseeing MS research</h6>
+                      <p class="card-text">Counterfactual and contrastive explanation of DCNN model decisions to develop trust in their use in high-risk environments.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary">View details</a>
+                    </div>
+                  </div> -->
+                </div>
+                
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pds/Homepage.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/pds/Homepage.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pulmonary Diagnostic System (PDS)"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details-pds.html" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <b>Completed projects</b>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <b>Trainings, certifications, and exhibitions</b>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Detection">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/tb detection/1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/tb detection/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="1st position in TB Detection and classification challenge"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/classification/class-1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/classification/class-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fingerprint biometric classification using multi-feature views and CNN."><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/classification/class-2.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/classification/class-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fingerprint biometric classification using Bayesian CNN."><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/classification/class-3.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/classification/class-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="TB identification using uncertainty and Bayesian CNN."><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a> -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                <b>Courses studied at MS and Ph.D. level</b>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+              <div class="accordion-body">
               </div>
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Segmentation">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/segmentation/segmentation-1png.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/segmentation/segmentation-1png.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Road segmentation using multi-feature view CNN."><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
+          <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <div class="row" data-aos="fade-up">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                      <li data-filter="*" class="filter-active">All</li>
+                      <li data-filter=".filter-web">Web App</li>
+                      <li data-filter=".filter-Detection">Detection</li>
+                      <li data-filter=".filter-Classification">Classification</li>
+                      <li data-filter=".filter-Segmentation">Segmentation</li>
+                    </ul>
+                  </div>
+                </div>
+        
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/pds/Homepage.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/pds/Homepage.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pulmonary Diagnostic System (PDS)"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details-pds.html" title="More Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-Detection">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/tb detection/1.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/tb detection/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="1st position in TB Detection and classification challenge"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details-tb-detection.html" title="More Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/classification/class-1.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/classification/class-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fingerprint biometric classification using multi-feature views and CNN."><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/classification/class-2.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/classification/class-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fingerprint biometric classification using Bayesian CNN."><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-Classification">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/classification/class-3.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/classification/class-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="TB identification using uncertainty and Bayesian CNN."><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-Segmentation">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/segmentation/segmentation-1png.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/segmentation/segmentation-1png.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Road segmentation using multi-feature view CNN."><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+                </div>
+                </div>
             </div>
-          </div>
-
-
+          </div> -->
         </div>
+
+
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -433,17 +582,183 @@
 
         <div class="section-title">
           <h2>Publications</h2>
-          <p>I have published 12 research articles on various computer vision problems. Six of these involve deep learning.</p>
+          <p>I have published 12 research articles on various computer vision problems. Others are under revision and in writing phase.</p>
         </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b>Classification papers</b>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#panelsStayOpen-collapseOne">
+              <div class="accordion-body">
+                <!-- <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <a href="https://doi.org/10.1109/TCYB.2019.2957188" target="_blank" class="ms-2 me-auto">
+                    M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>"Fingerprint Identification with Shallow Multi-feature View Classifier”</i>, IEEE Transactions on Cybernetics, Dec 2019
+                  </a>
+                  <!-- <span class="badge bg-primary rounded-pill">3</span> -->
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1049/iet-ipr.2018.5466" target="_blank" class="ms-2 me-auto">
+                      T. Zia, M. Ghafoor, <b>S.A. Tariq</b>, I.A. Taj, <i>“Robust Fingerprint Classification with Bayesian Convolutional Networks”</i>, IET Image Processing, Feb 2019
+                    </a>
+                  </li>
+        
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1109/ACCESS.2020.2970023" target="_blank" class="ms-2 me-auto">
+                      Z. Abideen, M. Ghafoor, et. al., <i>“Uncertainty Assisted Robust Tuberculosis Identification with Bayesian Convolutional Neural Networks”</i>, IEEE Access, Jan 2020
+                    </a>
+                    <!-- <span class="badge bg-primary rounded-pill">32</span> -->
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1007/s11045-022-00822-2" target="_blank" class="ms-2 me-auto">
+                      N. A. Khan, M. Ghafoor, M. Mohammadi, and <b>S.A. Tariq</b>, <i>“Convolutional Neural Networks based Time-Frequency Image Enhancement For the Analysis of EEG Signals”</i>, Multidimensional Systems and Signal Processing, Feb 2022
+                    </a>
+                  </li>
+                  
+              </ol>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>Segmentation papers</b>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#panelsStayOpen-collapseTwo">
+              <div class="accordion-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <a href="https://doi.org/10.1109/ACCESS.2020.2968965" target="_blank" class="ms-2 me-auto">
+                    M. Junaid, M. Ghafoor, et. al., <i>“Multi-feature View-based Shallow Convolutional Neural Network for Road Segmentation”</i>, IEEE Access, Dec 2019
+                  </a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1166/jmihi.2019.2512" target="_blank" class="ms-2 me-auto">
+                      M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>“Perceptually lossless surgical telementoring system based on non-parametric segmentation”</i>, Journal of Medical Imaging and Health Informatics, 2018
+                    </a>
+                  </li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>Video compression papers</b>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#panelsStayOpen-collapseThree">
+              <div class="accordion-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1007/s10278-019-00206-2" target="_blank" class="ms-2 me-auto">
+                      A. Hassan, M. Ghafoor, <b>S.A. Tariq</b>, T. Zia, W. Ahmad, <i>“High-Efficiency Video Coding (HEVC) based surgical telementoring system using Convolutional Neural Network”</i>, Journal of Digital Imaging, March 2019
+                    </a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1109/ACCESS.2019.2944765" target="_blank" class="ms-2 me-auto">
+                      W. Ahmad, M. Ghafoor, <b>S.A. Tariq</b>, R. Olsson, M. Sjöström, <i>“Computationally efficient LF compressing using MV-HEVC framework”</i>, IEEE Access, Sep 2019
+                    </a>
+                  </li>
+                </ol>
+                <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <b>GPU and CUDA papers</b>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#panelsStayOpen-collapseFour">
+              <div class="accordion-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1007/s10586-017-1121-z" target="_blank" class="ms-2 me-auto">
+                      <b>S.A. Tariq</b>, S. Iqbal, M. Ghafoor, et. al., <i>“Massively Parallel Palmprint Identification System using GPU”</i>, Cluster Computing, 2017
+                    </a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1049/iet-ipr.2016.1021" target="_blank" class="ms-2 me-auto">
+                      M. Ghafoor, S. Iqbal, <b>S.A. Tariq</b>, et. al., <i>“Efficient Fingerprint Matching Using GPU”</i>, IET Image Processing, 2017
+                    </a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1049/iet-ipr.2018.5736" target="_blank" class="ms-2 me-auto">
+                      M. Ghafoor, <b>S.A. Tariq</b>, S. Iqbal, I. A. Taj, N. M. Jafri, <i>“Robust palmprint identification using efficient preprocessing and two-stage matching technique”</i>, IET Image Processing, Sep 2020
+                    </a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a href="https://doi.org/10.1016/j.jpdc.2020.03.007" target="_blank" class="ms-2 me-auto">
+                      M. Shafiq, I. A. Taj, M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>“Accelerating Fingerprint Identification using FPGA for Large-scale Applications”</i>, Journal of Parallel and Distributed Computing, 2020
+                    </a>
+                  </li>
+                </ol>
+                <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <b>Explainable AI papers</b>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#panelsStayOpen-collapseFive">
+              <div class="accordion-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a class="ms-2 me-auto">
+                      <b>S.A. Tariq</b>, T. Zia, M. Ghafoor, <i>"Towards Counterfactual and Contrastive Explainability and Transparency of DCNN Image Classifiers”</i>, <b>Under review</b> at Knowledge-Based Systems, Dec 2021
+                    </a>
+                  </li>
+                </ol>
+                <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <b>Detection papers</b>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#panelsStayOpen-collapseSix">
+              <div class="accordion-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <a class="ms-2 me-auto">
+                       T. Zia, <b>S.A. Tariq</b>, <i>"TBformer: A Cascaded Transformer for Tuberculosis Detection and Classification”</i>, <b>In writing</b> phase
+                    </a>
+                  </li>
+                </ol>
+                <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
 
         <ol class="list-group list-group-numbered">
 
-          
+<!--           
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1109/TCYB.2019.2957188" target="_blank" class="ms-2 me-auto">
               M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>"Fingerprint Identification with Shallow Multi-feature View Classifier”</i>, IEEE Transactions on Cybernetics, Dec 2019
             </a>
-            <!-- <span class="badge bg-primary rounded-pill">3</span> -->
           </li>
 
           <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -456,35 +771,34 @@
             <a href="https://doi.org/10.1109/ACCESS.2020.2970023" target="_blank" class="ms-2 me-auto">
               Z. Abideen, M. Ghafoor, et. al., <i>“Uncertainty Assisted Robust Tuberculosis Identification with Bayesian Convolutional Neural Networks”</i>, IEEE Access, Jan 2020
             </a>
-            <!-- <span class="badge bg-primary rounded-pill">32</span> -->
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1007/s11045-022-00822-2" target="_blank" class="ms-2 me-auto">
               N. A. Khan, M. Ghafoor, M. Mohammadi, and <b>S.A. Tariq</b>, <i>“Convolutional Neural Networks based Time-Frequency Image Enhancement For the Analysis of EEG Signals”</i>, Multidimensional Systems and Signal Processing, Feb 2022
             </a>
-          </li>
+          </li> -->
 
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1109/ACCESS.2020.2968965" target="_blank" class="ms-2 me-auto">
               M. Junaid, M. Ghafoor, et. al., <i>“Multi-feature View-based Shallow Convolutional Neural Network for Road Segmentation”</i>, IEEE Access, Dec 2019
             </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          </li> -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1007/s10278-019-00206-2" target="_blank" class="ms-2 me-auto">
               A. Hassan, M. Ghafoor, <b>S.A. Tariq</b>, T. Zia, W. Ahmad, <i>“High-Efficiency Video Coding (HEVC) based surgical telementoring system using Convolutional Neural Network”</i>, Journal of Digital Imaging, March 2019
             </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          </li> -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1166/jmihi.2019.2512" target="_blank" class="ms-2 me-auto">
               M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>“Perceptually lossless surgical telementoring system based on non-parametric segmentation”</i>, Journal of Medical Imaging and Health Informatics, 2018
             </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          </li> -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1109/ACCESS.2019.2944765" target="_blank" class="ms-2 me-auto">
               W. Ahmad, M. Ghafoor, <b>S.A. Tariq</b>, R. Olsson, M. Sjöström, <i>“Computationally efficient LF compressing using MV-HEVC framework”</i>, IEEE Access, Sep 2019
             </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          </li> -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a href="https://doi.org/10.1007/s10586-017-1121-z" target="_blank" class="ms-2 me-auto">
               <b>S.A. Tariq</b>, S. Iqbal, M. Ghafoor, et. al., <i>“Massively Parallel Palmprint Identification System using GPU”</i>, Cluster Computing, 2017
             </a>
@@ -503,13 +817,12 @@
             <a href="https://doi.org/10.1016/j.jpdc.2020.03.007" target="_blank" class="ms-2 me-auto">
               M. Shafiq, I. A. Taj, M. Ghafoor, <b>S.A. Tariq</b>, et. al., <i>“Accelerating Fingerprint Identification using FPGA for Large-scale Applications”</i>, Journal of Parallel and Distributed Computing, 2020
             </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
+          </li> -->
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
             <a class="ms-2 me-auto">
               <b>S.A. Tariq</b>, T. Zia, M. Ghafoor, <i>"Towards Counterfactual and Contrastive Explainability and Transparency of DCNN Image Classifiers”</i>, <b>Under review</b> at Knowledge-Based Systems, Dec 2021
             </a>
-            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
-          </li>
+          </li> -->
         </ol>
 
       </div>
@@ -728,7 +1041,10 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
+    <div class="container"style="text-align:center">
+
+      <a ><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Falitariq-syed.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+
       <div class="copyright">
         &copy; Copyright <strong><span>iPortfolio</span></strong>
       </div>
