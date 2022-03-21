@@ -158,6 +158,13 @@
     })
   }
 
+$(document).ready(function(){
+  $("#trainingsButton").click(function(){
+    $("#allButton").trigger('click');
+  });
+});
+
+
   /**
    * Porfolio isotope and filter
    */
